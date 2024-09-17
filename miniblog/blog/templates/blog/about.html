@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+{% block docname %}
+MiniBlog | About
+{% endblock docname %}
+
+{% block content %}
+
+<div class="col-sm-10">
+    <h1 class="text-black display-5 fw-bold my-3 mx-5">This is About Page</h1>
+</div>
+{% for ab in about %}
+<h1 class="mx-5">{{ab.desc}}</h1>
+{% endfor%}
+{% endblock content %}

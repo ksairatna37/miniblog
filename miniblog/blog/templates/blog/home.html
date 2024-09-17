@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="text-black display-5 fw-bold">Home Page</h1>
+
+<div class="row-md-6 mb-5">
+  <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+    <h2>Create a blog</h2>
+    <p>Share your story with the world. Create a beautiful, personalized blog that fits your brand. Grow your audience with built-in marketing tools, or transform your passion into revenue by gating access with a paywall.</p>
+    <a href="{% url 'signup'%}" class="btn btn-primary">Get Started</a>
+  </div>
+</div>
+
+{% endblock content %}
